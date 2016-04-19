@@ -1,0 +1,16 @@
+<h1>Cliens using this service</h1>
+
+<%= link_to "New client", new_client_path %>
+
+<table>
+    <tr>
+        <td>Name</td>
+        <td>Age</td>
+    </tr>
+    <% @clients.each do |client| %>
+        <tr>
+            <td><%= client.name %></td>
+            <td><%= client.age %></td>
+        </tr>
+    <% end %>
+</table>

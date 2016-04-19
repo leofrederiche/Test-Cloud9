@@ -1,0 +1,8 @@
+<h1>Creating a new client on system</h1>
+
+<%= form_for @new_client do |new_client| %>
+    <%= new_client.text_field :name, placeholder: "Name" %>
+    <%= new_client.text_field :age, placeholder: "Age" %>
+    <%= new_client.submit "Send" %>
+<% end %>
+
